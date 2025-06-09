@@ -7,12 +7,12 @@ export const useCountries = () => {
   }, [])
 
   const fetchCountries = () => {
-    // fetch('https://corsproxy.io/?url=https://www.apicountries.com/countries')
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     setCountries(data)
-    //   })
-    //   .catch((error) => console.log(error))
+    fetch('https://corsproxy.io/?url=https://www.apicountries.com/countries')
+      .then((response) => response.json())
+      .then((data) => {
+        setCountries(data)
+      })
+      .catch((error) => console.log(error))
   }
 
   return countries

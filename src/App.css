@@ -15,6 +15,7 @@ span {
   justify-content: center;
   background-color: rgb(0, 0, 0);
   height: 100vh;
+  width: 100vw;
 }
 
 .flag {
@@ -49,4 +50,54 @@ span {
 
 .custom-btn:active {
   transform: scale(0.98);
+}
+
+.refresh {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 50px;
+  height: 50px;
+  scale: 3;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: rgba(181, 181, 181, 0.5);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.history {
+  display: flex;
+  overflow-x: scroll;
+  gap: 12px;
+  padding: 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 90vw;
+}
+
+.historyItem {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* ширина вертикальной полосы */
+  height: 12px; /* высота горизонтальной полосы */
+}
+
+/* Ползунок (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #222; /* отступ вокруг ползунка */
+}
+
+/* Трек (background полосы) */
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 6px;
 }
