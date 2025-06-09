@@ -32,7 +32,7 @@ span {
 }
 
 .custom-btn {
-  background-color: #4f46e5; /* Indigo-600 */
+  background-color: #4f46e5;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -44,7 +44,7 @@ span {
 }
 
 .custom-btn:hover {
-  background-color: #4338ca; /* Indigo-700 */
+  background-color: #4338ca;
   transform: translateY(-2px);
 }
 
@@ -85,18 +85,16 @@ span {
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* ширина вертикальной полосы */
-  height: 12px; /* высота горизонтальной полосы */
+  width: 12px;
+  height: 12px;
 }
 
-/* Ползунок (thumb) */
 ::-webkit-scrollbar-thumb {
   background-color: #888;
   border-radius: 6px;
-  border: 3px solid #222; /* отступ вокруг ползунка */
+  border: 3px solid #222;
 }
 
-/* Трек (background полосы) */
 ::-webkit-scrollbar-track {
   background: #222;
   border-radius: 6px;
